@@ -1,0 +1,29 @@
+---
+title: "Snippets"
+author: "Dr K"
+output: 
+  html_document:
+    number_sections: true
+    toc: true
+    toc_depth: 5
+date: "`r Sys.Date()`"    
+    
+---
+
+
+
+# Demo 
+## On Building
+### Tables 
+#### of some
+##### content
+
+Update this with code snippets that show your tricks -- Dr K
+
+How to change all character variables to factor variables
+obviously drop the eval=FALSE bit where FinalData is your dataframe name
+
+```{r eval=FALSE}
+FinalData <- FinalData %>%
+mutate(across(where(is.character), as.factor))
+```
